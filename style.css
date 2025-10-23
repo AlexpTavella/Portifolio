@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Comfortaa", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+}
+
+#NavNome{
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+    padding: 15px;
+    padding-top: -10px;
+}
+#Logo{
+  padding-top: 32px;
+  padding-left: 8px;
+  height: 60px;
+  width: 245px;
+}
+
+#Navbar{
+    width: 100%;
+    height: auto;
+    background-color: rgb(241, 241, 241);
+    margin-top: -35px;
+
+}
+#Intro{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px;
+    background-repeat: repeat; /* repete a imagem */
+    background-size: auto; /* ou use 'cover' para preencher toda a tela */
+    background-attachment: fixed; /* faz a textura rolar junto com a página */
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+
+}
+
+#Foto {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+#Foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#Info h1{
+    font-weight: 800;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#Cargos{
+    margin-top: -35px;
+    font-size: 22px;
+    color: rgb(238, 107, 0);
+    font-weight: bold;
+}
+
+#Linguagens {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: -2px;
+}
+
+
+
+#Page{
+    background-color: rgb(241, 241, 241);
+    padding: 45px;
+    margin-top: 35px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 1000px;
+}
+
+.Laranja{
+    color: rgb(255, 115, 0);
+}
+
+#TProjeto{
+    font-size: 32px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    width: 350px;
+    height: 190px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 10px;
+    font-size: 18px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.imagem-galeria {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.imagem-galeria:hover {
+  transform: scale(1.05);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.fechar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1010;
+}
+
+.modal-img-container {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.modal-conteudo {
+  display: block;
+  max-width: 90vw;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  cursor: grab;
+  user-select: none;
+  transform: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Faixa extra para telas maiores (>= 1600px) ===== */
+/* melhora aparência em FullHD+ sem quebrar comportamento em 1366 */
+@media (min-width: 1600px) {
+    #Intro {
+        max-width: 1400px;
+        gap: 48px;
+        padding: 40px;
+    }
+
+    #Foto {
+        width: 320px;
+        height: 320px;
+    }
+
+    #Info h1 {
+        font-size: 64px;
+    }
+
+    #Page{
+        padding: 60px;
+        margin-top: 40px;
+        height: auto;
+    }
+
+    .card {
+        width: 360px;
+        height: 210px;
+    }
+
+    .imagem-galeria {
+        width: 260px;
+        height: 170px;
+    }
+}
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+    #Info h1{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    #Cargos{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #Linguagens {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    #Intro{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #Foto {
+        width: 240px;
+        height: 240px;
+    }
+
+    #Page{
+        padding: 30px;
+        height: auto;
+    }
+
+    .card {
+        width: 280px;
+    }
+
+    .imagem-galeria {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+/* Celulares (até 600px) */
+@media (max-width: 600px) {
+    #Logo {
+        width: 180px;
+        height: auto;
+    }
+
+    #Intro{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    #Foto {
+        width: 180px;
+        height: 180px;
+    }
+
+    #Info h1{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    #Cargos{
+        font-size: 18px;
+        margin-top: -15px;
+    }
+
+    #Linguagens {
+        font-size: 20px;
+    }
+
+    svg {
+        width: 32px;
+        height: 32px;
+        margin: 4px;
+    }
+
+    #Page {
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .galeria {
+        gap: 10px;
+    }
+
+    .imagem-galeria {
+        width: 75%;
+        height: 20%;
+        border-radius: 8px;
+    }
+
+    #Footer h1 {
+        font-size: 22px;
+    }
+
+    #Footer h3 {
+        font-size: 16px;
+    }
+
+    #Footer svg {
+        width: 35px;
+        height: 35px;
+        margin: 5px;
+    }
+}
