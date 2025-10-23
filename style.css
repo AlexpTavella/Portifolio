@@ -48,6 +48,11 @@ body {
     background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
 
 }
+#Nome{
+    font-weight: 800;
+    font-size: 60px;
+    font-weight: bold;
+}
 
 #Foto {
     width: 280px;
@@ -62,12 +67,6 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
-}
-
-#Info h1{
-    font-weight: 800;
-    font-size: 40px;
-    font-weight: bold;
 }
 
 #Cargos{
@@ -87,7 +86,7 @@ body {
 
 #Page{
     background-color: rgb(241, 241, 241);
-    padding: 45px;
+    padding: 40px;
     margin-top: 35px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -236,8 +235,10 @@ body {
         height: 320px;
     }
 
-    #Info h1 {
-        font-size: 64px;
+    #Nome {
+    font-weight: 800;
+    font-size: 32px;
+    font-weight: bold;
     }
 
     #Page{
@@ -259,9 +260,14 @@ body {
 
 /* Tablets (até 1024px) */
 @media (max-width: 1024px) {
-    #Info h1{
+     h1{
         font-size: 32px;
         text-align: center;
+    }
+
+    #Nome{
+    font-weight: 800;
+    font-weight: bold;
     }
 
     #Cargos{
@@ -320,18 +326,20 @@ body {
         height: 180px;
     }
 
-    #Info h1{
-        font-size: 30px;
+    #Nome{
+        font-size: 42px;
         margin-top: 10px;
+        margin-bottom: 35px;
     }
 
     #Cargos{
-        font-size: 18px;
-        margin-top: -15px;
+        font-size: 15px;
+
     }
 
     #Linguagens {
         font-size: 20px;
+        margin-bottom: 8px;
     }
 
     svg {
