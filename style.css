@@ -41,9 +41,9 @@ body {
     justify-content: center;
     gap: 30px;
     padding: 25px;
-    background-repeat: repeat; /* repete a imagem */
-    background-size: auto; /* ou use 'cover' para preencher toda a tela */
-    background-attachment: fixed; /* faz a textura rolar junto com a página */
+    background-repeat: repeat;
+    background-size: auto; 
+    background-attachment: fixed; 
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
 
@@ -82,6 +82,11 @@ body {
     margin-bottom: -2px;
 }
 
+#SobreMim{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 50px;
+}
 
 
 #Page{
@@ -98,7 +103,7 @@ body {
 }
 
 #TProjeto{
-    font-size: 32px;
+    font-size: 23px;
     margin-top: 35px;
     text-align: center;
 }
@@ -222,23 +227,62 @@ body {
 
 
 /* ===== Faixa extra para telas maiores (>= 1600px) ===== */
-/* melhora aparência em FullHD+ sem quebrar comportamento em 1366 */
+
 @media (min-width: 1600px) {
-    #Intro {
-        max-width: 1400px;
-        gap: 48px;
-        padding: 40px;
-    }
+#Intro{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px;
+    background-repeat: repeat;
+    background-size: auto; 
+    background-attachment: fixed; 
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
 
-    #Foto {
-        width: 320px;
-        height: 320px;
-    }
-
-    #Nome {
+}
+#Nome{
     font-weight: 800;
-    font-size: 32px;
+    font-size: 60px;
     font-weight: bold;
+}
+
+#Foto {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+#Foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#Cargos{
+    margin-top: -35px;
+    font-size: 22px;
+    color: rgb(238, 107, 0);
+    font-weight: bold;
+}
+
+#Linguagens {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: -2px;
+}
+
+
+    #SobreMim{
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 50px;
     }
 
     #Page{
@@ -269,6 +313,12 @@ body {
     font-weight: 800;
     font-weight: bold;
     }
+
+    #SobreMim{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 50px;
+    }    
 
     #Cargos{
         font-size: 20px;
@@ -327,9 +377,15 @@ body {
     }
 
     #Nome{
-        font-size: 42px;
+        font-size: 40px;
         margin-top: 10px;
         margin-bottom: 35px;
+    }
+
+    #SobreMim{
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 50px;
     }
 
     #Cargos{
