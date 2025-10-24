@@ -220,20 +220,7 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* ===== Faixa extra para telas maiores (>= 1600px) ===== */
-
+/* =================================== Visualização em telas maiores (>= 1600px) =================================== */
 @media (min-width: 1600px) {
 #Intro{
     width: auto;
@@ -308,7 +295,9 @@ body {
     }
 }
 
-/* Tablets (até 1024px) */
+
+
+/* =================================== Visualização em Tablets (até 1024px) =================================== */
 @media (max-width: 1024px) {
      h1{
         font-size: 32px;
@@ -362,7 +351,10 @@ body {
     }
 }
 
-/* Celulares (até 600px) */
+
+
+
+/* =================================== Visualização em Celulares (até 600px) =================================== */
 @media (max-width: 600px) {
     #Logo {
         width: 180px;
