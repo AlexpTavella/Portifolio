@@ -384,13 +384,13 @@ body {
     }
 
     #Nome{
-        font-size: 35px;
+        font-size: 32px;
         margin-top: 10px;
         margin-bottom: 35px;
     }
 
     #Cargos{
-        font-size: 15px;
+        font-size: 13px;
 
     }    
 
@@ -448,3 +448,4 @@ body {
         margin: 5px;
     }
 }
+
