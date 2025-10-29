@@ -51,7 +51,15 @@ body {
 }
 #Nome{
     font-weight: 800;
-    font-size: 60px;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+
+#Cargos{
+    margin-top: -35px;
+    font-size: 18px;
+    color: rgb(238, 107, 0);
     font-weight: bold;
 }
 
@@ -72,13 +80,6 @@ body {
     display: block;
 }
 
-#Cargos{
-    margin-top: -35px;
-    font-size: 22px;
-    color: rgb(238, 107, 0);
-    font-weight: bold;
-}
-
 #Linguagens {
     font-weight: bold;
     font-size: 25px;
@@ -86,7 +87,7 @@ body {
 }
 
 #SobreMim{
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -220,7 +221,20 @@ body {
 
 
 
-/* =================================== Visualização em telas maiores (>= 1600px) =================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Faixa extra para telas maiores (>= 1600px) ===== */
+
 @media (min-width: 1600px) {
 #Intro{
     width: auto;
@@ -279,27 +293,25 @@ body {
     }
 
     #Page{
-        padding: 60px;
-        margin-top: 40px;
-        height: auto;
+    padding: 60px;
+    margin-top: 40px;
+    height: auto;
     }
 
     .card {
-        width: 360px;
-        height: 210px;
+    width: 360px;
+    height: 210px;
     }
 
     .imagem-galeria {
-        width: 260px;
-        height: 170px;
+    width: 260px;
+    height: 170px;
     }
 }
 
-
-
-/* =================================== Visualização em Tablets (até 1024px) =================================== */
+/* Tablets (até 1024px) */
 @media (max-width: 1024px) {
-     h1{
+    h1{
         font-size: 32px;
         text-align: center;
     }
@@ -351,10 +363,7 @@ body {
     }
 }
 
-
-
-
-/* =================================== Visualização em Celulares (até 600px) =================================== */
+/* Celulares (até 600px) */
 @media (max-width: 600px) {
     #Logo {
         width: 180px;
@@ -375,20 +384,20 @@ body {
     }
 
     #Nome{
-        font-size: 40px;
+        font-size: 35px;
         margin-top: 10px;
         margin-bottom: 35px;
-    }
-
-    #SobreMim{
-    font-size: 13px;
-    text-align: center;
-    margin-bottom: 50px;
     }
 
     #Cargos{
         font-size: 15px;
 
+    }    
+
+    #SobreMim{
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 50px;
     }
 
     #Linguagens {
