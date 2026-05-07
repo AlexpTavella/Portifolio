@@ -85,6 +85,26 @@ body,
     color: white;
 }
 
+#LPsvgs{
+    margin-top: 10px;
+}
+
+#dCurriculo{
+    margin-top: 10px;
+}
+
+#dCurriculo a{
+    color: white;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+#dCurriculo a:hover{
+    color: rgb(255, 191, 108);
+}
+
 #Foto {
     width: 280px;
     height: 280px;
@@ -251,6 +271,7 @@ body,
     width: 100%;
     background-color: rgba(0, 0, 0, 0.192);
     text-align: center;
+    font-size: 16px;
 }
 
 .divfooter a{
@@ -287,10 +308,14 @@ body,
     }
 
     #Linguagens {
-        margin-top: -7px;
+        margin-top: -10px;
         padding: 15px;
         font-size: 19px;
         text-align: center;
+    }
+
+    #LPsvgs{
+        margin-top: -5px;
     }
 
     #SobreMim {
@@ -357,22 +382,7 @@ body,
 
     .divfooter {
         width: auto;
-        font-size: 8px;
-    }
-
-    #Linkedin--Streamline-Unicons {
-        height: 15px;
-        width: 15px;
-    }
-
-    #Instagram-Alt--Streamline-Unicons {
-        height: 15px;
-        width: 15px;
-    }
-
-    #Envelope-Alt--Streamline-Unicons {
-        height: 15px;
-        width: 15px;
+        font-size: 10.5px;
     }
 
 
@@ -387,9 +397,12 @@ body,
         margin: auto;
     }
 
-    #svgs {
-        padding-top: 8px;
-        margin-left: -28px;
+    #icons{
+        font-size: 18px;
+    }
+
+    #carinha{
+        display: none;
     }
 
 
